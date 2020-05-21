@@ -1,0 +1,13 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+  {% for post in posts %}
+  <h2>{{post.titulo}}</h2>  
+  <p><b>Autor:{{ post.autor }}</p></b>
+  <p> {{ post.texto }}</p>
+  {% else %}
+    <p>Nenhum post</p>
+  {% endfor %}
+{% endblock %}

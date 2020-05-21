@@ -1,0 +1,39 @@
+{% extends 'base.html' %} <!--herda do base-->
+
+{% block conteudo %}
+
+<form action='/post/gravar' method='post'> 
+  <!--direciona para post-->
+
+  <p>
+  
+  <label for='titulo'>Título:</label> <!--linkar label-->
+  
+  <input id='titulo' type='text' name='titulo'>
+  
+  </p>
+  
+  <p>
+  
+  <label for='texto'>Texto:</label>
+  
+  <textarea id='texto' name='texto'></textarea>
+  
+  </p>
+  
+  <p>
+  
+    <label for='autor'>Autor:</label>
+    
+    <textarea id='autor' type='text' name='autor'></textarea>
+    
+    </p>
+  <p>
+  
+  <input type='submit' value='Enviar'>
+  
+  </p>
+  
+  </form>
+
+{% endblock %}
