@@ -1,0 +1,99 @@
+body{
+	display: flex; 
+	flex-flow: row wrap; 
+	margin: 0;
+	}
+
+header{
+	height: 8vh;
+	width: 100vw; 
+	padding: 1vh;
+	font-family: arial;
+	text-align: center;
+	background: black;
+	font-weight: bold;
+	}
+
+nav{
+	height: 8vh;
+	width: 100vw; 
+	padding: 1vh;
+	font-family: arial;
+	text-align: center;
+	color: white;
+	background: black;
+	}
+	
+h1{
+	margin:0;
+	color: white;
+	background: black;	
+	}
+	
+.menu-superior{
+	display: flex; 
+	flex-flow: row wrap;
+	background: black;
+	float: right;
+	width:58%	
+	}
+
+.item-menu-superior{
+	padding: 5px;
+	margin: 5px;
+	color: white;
+	border: 1px white solid;
+	border-radius: 5px;
+	}
+
+.lists{
+	width: 76vw; 
+	height: 76vh; 
+	padding: 2vh; 
+	display: flex; 
+	flex-flow: row nowrap;
+	overflow: auto;
+	background: navy;
+}
+
+.list{
+	margin: 5px;
+	flex: 0px 0px 200px;
+	border:  black;
+	border-radius: 15px;
+	background: gray;
+}
+
+.list-title{
+	margin: 0; 
+	padding: 10px;
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	border-bottom: solid white 2px;
+}
+
+.card{
+	width: 170px;
+	height: 70px;
+	background: white;
+	margin: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.menu-lateral{
+	list-style-type: none;
+	background: white;
+	margin: 10px;
+	font-size: 20px;
+}
+
+aside{
+	width: 20vw;
+	border-left: solid gray 2px;
+}
+
+li{
+	margin: 15px;
+}
