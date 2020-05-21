@@ -8,10 +8,8 @@ app.config.from_object(__name__)
 
 # configuração
 app.config.update(
-    DATABASE = 'banco.db',
-    DEBUG = True,
-    SECRET_KEY = 'development key',
-    USERNAME = 'admin',
-    PASSWORD = 'default',
+    DATABASE = 'banco_blog.db',
+    DEBUG = True, #atualiza automático
+    
 )
 
