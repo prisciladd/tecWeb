@@ -9,7 +9,7 @@ from models import Post
 @app.route('/post/gravar', methods=['POST']) #recebe mensagem do formulario
 
 def gravar_post():
-    #mensagens= Mensagem (request.form['usuario'],
+    
     titulo = request.form['titulo']
     autor = request.form['autor']
     texto = request.form['texto']
@@ -35,6 +35,18 @@ def index():
     menu.append({'active': False,
                 'href': '/priscila',
                 'texto': 'Sobre - Priscila'})
+    menu.append({'active': False,
+                'href': '/anderson',
+                'texto': 'Sobre - Anderson'})
+    menu.append({'active': False,
+                'href': '/bruno',
+                'texto': 'Sobre - Bruno'})
+    menu.append({'active': False,
+                'href': '/mateus',
+                'texto': 'Sobre - Mateus'})
+    menu.append({'active': False,
+                'href': '/gledson',
+                'texto': 'Sobre - Gledson'})
     ## Inserimos tudo que foi criado no dicionário context, ele será passado para a view
     context = {'titulo': 'Página principal',
             'menu': menu,
@@ -56,6 +68,18 @@ def post():
     menu.append({'active': False,
                 'href': '/priscila',
                 'texto': 'Sobre - Priscila'})
+    menu.append({'active': False,
+                'href': '/anderson',
+                'texto': 'Sobre - Anderson'})
+    menu.append({'active': False,
+                'href': '/bruno',
+                'texto': 'Sobre - Bruno'})
+    menu.append({'active': False,
+                'href': '/mateus',
+                'texto': 'Sobre - Mateus'})
+    menu.append({'active': False,
+                'href': '/gledson',
+                'texto': 'Sobre - Gledson'})
     
     context = {'titulo': 'Escrever post', #muda frase na tela e tiitulo página
             'menu': menu}
@@ -75,8 +99,145 @@ def priscila():
     menu.append({'active': True,
                 'href': '/priscila',
                 'texto': 'Sobre - Priscila'})
+    menu.append({'active': False,
+                'href': '/anderson',
+                'texto': 'Sobre - Anderson'})
+    menu.append({'active': False,
+                'href': '/bruno',
+                'texto': 'Sobre - Bruno'})
+    menu.append({'active': False,
+                'href': '/mateus',
+                'texto': 'Sobre - Mateus'})
+    menu.append({'active': False,
+                'href': '/gledson',
+                'texto': 'Sobre - Gledson'})
     
-    context = {'titulo': 'Escrever post', #muda frase na tela e tiitulo página
+    context = {'titulo': 'Sobre - Priscila', #muda frase na tela e tiitulo página
             'menu': menu}
-    return render_template('post.html', **context)
+    return render_template('priscila.html', **context)
+
+@app.route('/anderson')
+def anderson():
+    menu = []
+    
+    ## Cada opção no menu é um dicionário
+    menu.append({'active': False, # active informa se a opção está ativa, e se estiver, destaca ela na página
+                'href': '/', # href é o caminho que deve ser aberto pela opção
+                'texto': 'Página principal'}) # texto é o texto exibido no menu para a opção
+    menu.append({'active': False,
+                'href': '/post',
+                'texto': 'Escrever post'})
+    menu.append({'active': False,
+                'href': '/priscila',
+                'texto': 'Sobre - Priscila'})
+    menu.append({'active': True,
+                'href': '/anderson',
+                'texto': 'Sobre - Anderson'})
+    menu.append({'active': False,
+                'href': '/bruno',
+                'texto': 'Sobre - Bruno'})
+    menu.append({'active': False,
+                'href': '/mateus',
+                'texto': 'Sobre - Mateus'})
+    menu.append({'active': False,
+                'href': '/gledson',
+                'texto': 'Sobre - Gledson'})
+    
+    context = {'titulo': 'Sobre - Priscila', #muda frase na tela e tiitulo página
+            'menu': menu}
+    return render_template('anderson.html', **context)
+
+@app.route('/bruno')
+def bruno():
+    menu = []
+    
+    ## Cada opção no menu é um dicionário
+    menu.append({'active': False, # active informa se a opção está ativa, e se estiver, destaca ela na página
+                'href': '/', # href é o caminho que deve ser aberto pela opção
+                'texto': 'Página principal'}) # texto é o texto exibido no menu para a opção
+    menu.append({'active': False,
+                'href': '/post',
+                'texto': 'Escrever post'})
+    menu.append({'active': False,
+                'href': '/priscila',
+                'texto': 'Sobre - Priscila'})
+    menu.append({'active': False,
+                'href': '/anderson',
+                'texto': 'Sobre - Anderson'})
+    menu.append({'active': True,
+                'href': '/bruno',
+                'texto': 'Sobre - Bruno'})
+    menu.append({'active': False,
+                'href': '/mateus',
+                'texto': 'Sobre - Mateus'})
+    menu.append({'active': False,
+                'href': '/gledson',
+                'texto': 'Sobre - Gledson'})
+    
+    context = {'titulo': 'Sobre - Bruno', #muda frase na tela e tiitulo página
+            'menu': menu}
+    return render_template('bruno.html', **context)
+
+@app.route('/mateus')
+def mateus():
+    menu = []
+    
+    ## Cada opção no menu é um dicionário
+    menu.append({'active': False, # active informa se a opção está ativa, e se estiver, destaca ela na página
+                'href': '/', # href é o caminho que deve ser aberto pela opção
+                'texto': 'Página principal'}) # texto é o texto exibido no menu para a opção
+    menu.append({'active': False,
+                'href': '/post',
+                'texto': 'Escrever post'})
+    menu.append({'active': False,
+                'href': '/priscila',
+                'texto': 'Sobre - Priscila'})
+    menu.append({'active': False,
+                'href': '/anderson',
+                'texto': 'Sobre - Anderson'})
+    menu.append({'active': False,
+                'href': '/bruno',
+                'texto': 'Sobre - Bruno'})
+    menu.append({'active': True,
+                'href': '/mateus',
+                'texto': 'Sobre - Mateus'})
+    menu.append({'active': False,
+                'href': '/gledson',
+                'texto': 'Sobre - Gledson'})
+    
+    context = {'titulo': 'Sobre - Mateus', #muda frase na tela e tiitulo página
+            'menu': menu}
+    return render_template('mateus.html', **context)
+
+@app.route('/gledson')
+def gledson():
+    menu = []
+    
+    ## Cada opção no menu é um dicionário
+    menu.append({'active': False, # active informa se a opção está ativa, e se estiver, destaca ela na página
+                'href': '/', # href é o caminho que deve ser aberto pela opção
+                'texto': 'Página principal'}) # texto é o texto exibido no menu para a opção
+    menu.append({'active': False,
+                'href': '/post',
+                'texto': 'Escrever post'})
+    menu.append({'active': False,
+                'href': '/priscila',
+                'texto': 'Sobre - Priscila'})
+    menu.append({'active': False,
+                'href': '/anderson',
+                'texto': 'Sobre - Anderson'})
+    menu.append({'active': False,
+                'href': '/bruno',
+                'texto': 'Sobre - Bruno'})
+    menu.append({'active': False,
+                'href': '/mateus',
+                'texto': 'Sobre - Mateus'})
+    menu.append({'active': True,
+                'href': '/gledson',
+                'texto': 'Sobre - Gledson'})
+    
+    context = {'titulo': 'Sobre - Gledson', #muda frase na tela e tiitulo página
+            'menu': menu}
+    return render_template('gledson.html', **context)
+
 app.run()

@@ -7,7 +7,7 @@ class Post:
         self.texto= texto
 
     def gravar (self):
-        sql = '''insert into posts (titulo,autor, texto) values (?, ?, ?)'''
+        sql = '''insert into posts (titulo, autor, texto) values (?, ?, ?)'''
         primeiro_interrogacao= self.titulo
         segundo_interrogacao= self.autor
         terceiro_interrogacao= self.texto
@@ -18,11 +18,11 @@ class Post:
 
     @staticmethod
     def recupera_todos():
-        sql = '''select titulo,autor, texto from posts order by id desc'''
+        sql = '''select titulo, autor, texto from posts order by id desc'''
         cur= bd().execute(sql)
-        ## Montamos dicionário dicionários com os resultados da consulta para passar para a view
+        ## Montamos dicionários com os resultados da consulta para passar para a view
         posts = []
-        for titulo,autor, texto in cur.fetchall(): # fetchall() gera uma lista com os resultados:
+        for titulo, autor, texto in cur.fetchall(): # fetchall() gera uma lista com os resultados:
             post = Post (titulo,autor, texto)
             posts.append(post)
 
