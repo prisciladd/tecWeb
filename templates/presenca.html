@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<div class='cabecalho'>
+    <h1>Formulário de presença</h1>
+</div>
+<div class='conteudo'>
+    <form action='/presenca/gravar' method='post'>
+        <p>
+            Esteve presente?<br>
+            <input type='radio' id='check1' name='presenca' value='presente'>  
+            <label for='check1'> Presente</label>
+
+            <input type='radio' id='check2' name='presenca' value='ausente'>  
+            <label for='check2'>Ausente</label>
+        </p>
+        <p>
+            <label for='pergunta'> Quais lições podemos tirar desse isolamento?</label><br>
+            <input id='pergunta' id='pergunta' type='text' name='pergunta' required>
+        </p>
+        <p>
+            <label for='email'> Email:</label><br>
+            <input id='email' type='text' name='email' required>
+        </p>
+        <p>
+            <label for='texto'> Comentários:</label><br>
+            <textArea id='texto' name='comentario'></textArea>
+        </p>                
+        <p>
+            <input type='submit' value='Enviar'>
+        </p>
+    </form>
+</div>
+
+{% endblock %}

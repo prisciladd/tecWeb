@@ -1,14 +1,14 @@
 OK Cada integrante tem uma página com rota '/nomedointegrante'
 Cada página de integrante tem um arquivo css individual com estilo próprio
 OK Cada página de integrante tem uma descrição curta a respeito do integrante
-Existe uma página de presença em '/presenca'
-A página de presença contém um formulário
-O formulário da página de presença tem um input de email
-O formulário da página de presença tem um input radio com 2 opções (presente, ausente)
-O formulário da página de presença tem um input de texto para inserir a resposta de uma pergunta
-O formulário da página de presença tem um textarea para entrar comentários
+OK Existe uma página de presença em '/presenca'
+OK A página de presença contém um formulário
+OK O formulário da página de presença tem um input de email
+OK O formulário da página de presença tem um input radio com 2 opções (presente, ausente)
+OK O formulário da página de presença tem um input de texto para inserir a resposta de uma pergunta
+OK O formulário da página de presença tem um textarea para entrar comentários
 O esquema.sql contém a definição de uma tabela presenca
-A tabela de presença contém 4 campos textuais: email, presenca, resposta, comentarios
+OK A tabela de presença contém 4 campos textuais: email, presenca, resposta, comentarios
 Existe um model Presenca
 O model de presença contém uma função para gravar presenças no banco
 O model de presença contém uma função para ler presenças do banco
