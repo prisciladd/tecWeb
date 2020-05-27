@@ -14,8 +14,8 @@ class Post:
         
         bd().execute(sql, [primeiro_interrogacao, segundo_interrogacao, terceiro_interrogacao])
 
-        bd().commit()   
-
+        bd().commit()
+        
     @staticmethod
     def recupera_todos():
         sql = '''select titulo, autor, texto from posts order by id desc'''
@@ -26,5 +26,8 @@ class Post:
             post = Post (titulo,autor, texto)
             posts.append(post)
 
-        return posts
+        return posts 
+
+
+    
 
