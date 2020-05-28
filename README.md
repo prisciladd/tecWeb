@@ -1,4 +1,13 @@
-# Projeto base - Flask
+# AC 05 Tech Web
+
+Integrantes
+
+Anderson da Silva Machado RA: 1902142
+Bruno RA.: 1902440
+Matheus Marques Silva RA: 1801198
+Gledson da Silva RA: 1200279
+Priscila Da Dalt RA: 1901843
+
 
 # Inicialização
 
