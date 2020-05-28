@@ -2,11 +2,11 @@
 
 Integrantes
 
-Anderson da Silva Machado RA: 1902142
-Bruno RA.: 1902440
-Matheus Marques Silva RA: 1801198
-Gledson da Silva RA: 1200279
-Priscila Da Dalt RA: 1901843
+Anderson da Silva Machado RA: 1902142<br>
+Bruno RA.: 1902440<br>
+Matheus Marques Silva RA: 1801198<br>
+Gledson da Silva RA: 1200279<br>
+Priscila Da Dalt RA: 1901843<br>
 
 
 # Inicialização
