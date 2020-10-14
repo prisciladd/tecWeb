@@ -1,13 +1,4 @@
-# AC 05 Tech Web
-
-Integrantes
-
-Anderson da Silva Machado RA: 1902142<br>
-Bruno Santos de Assunção RA.: 1902440<br>
-Matheus Marques Silva RA: 1801198<br>
-Gledson da Silva RA: 1200279<br>
-Priscila Da Dalt RA: 1901843<br>
-
+# Projeto base - Flask
 
 # Inicialização
 

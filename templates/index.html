@@ -3,21 +3,11 @@
 
 {% block conteudo %}
 
-<br>
-<h3>Chat da AC 05 de Tech Web da Faculdade Impacta</h3>
-<br>
-
   {% for post in posts %}
-  <b>-------------------------------------------------------</b><br><br>
-  <p><b>Você estava presente:</b> {{post.presenca}}</p> 
-  <p><b>E-mail do usuário:</b> {{post.email}}</p>
-  <p><b>Quais lições podemos tirar desse isolamento?</b><br><br>
-     {{ post.pergunta }}</p>
-  <p><b>Porque você acha isso?</b><br>
-    <br> {{ post.texto }}</p>
+  <h2>{{post.titulo}}</h2>  
+  <p><b>Autor:{{ post.autor }}</p></b>
+  <p> {{ post.texto }}</p>
   {% else %}
     <p>Nenhum post</p>
   {% endfor %}
-  <b>-------------------------------------------------------</b><br><br>
 {% endblock %}
-
